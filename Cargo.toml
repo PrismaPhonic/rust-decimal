@@ -21,6 +21,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 [dependencies]
 arbitrary = { default-features = false, optional = true, version = "1.0" }
 arrayvec = { default-features = false, version = "0.7" }
+bitcode = { default-feautures = false, features = ["derive"], optional = true, version = "0"}
 borsh = { default-features = false, features = ["derive", "unstable__schema"], optional = true, version = "1.1.1" }
 bytes = { default-features = false, optional = true, version = "1.0" }
 diesel1 = { default-features = false, optional = true, package = "diesel", version = "1.0" }
@@ -39,6 +40,7 @@ tokio-postgres = { default-features = false, optional = true, version = "0.7" }
 
 [dev-dependencies]
 bincode = { default-features = false, version = "1.0" }
+bitcode = { version = "0.5" }
 bytes = { default-features = false, version = "1.0" }
 criterion = { default-features = false, version = "0.5" }
 csv = "1"
